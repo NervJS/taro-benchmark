@@ -1,0 +1,19 @@
+<view class="container">
+    <!-- <jumbotron bindrun="run" bindadd="add" bindupdate="update" bindclear="clear" bindswaprows="swapRows"></jumbotron> -->
+    <view class="jumbotron">
+        <button bindtap="run">Create 40 goods</button>
+        <button bindtap="add">Append 20 goods</button>
+        <button bindtap="update">Update every 10th good</button>
+        <button bindtap="swaprows">Swap good</button>
+        <button bindtap="clear">Clear</button>
+    </view>
+    <view class="list">
+        <view class="{{index % 2 ? (index === selected ? 'item right selected' : 'item right') : (index === selected ? 'item selected' : 'item')}}" jd:key="index" jd:for="{{data}}">
+            <view class="image_wrap" bindtap="select" data-id="{{index}}">
+                <image class="image" src="{{item.img}}" mode="aspectFit"></image>
+            </view>
+            <view class="title">{{item.title}}</view>
+            <view class="price">¥ {{item.price}}</view>
+        </view>
+    </view>
+</view>

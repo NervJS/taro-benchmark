@@ -1,0 +1,7 @@
+<view class="jumbotron">
+    <my-button bindclick="run" bid="run" title="Create 1,000 rows"></my-button>
+    <my-button bindclick="add" bid="add" title="Append 1,000 rows"></my-button>
+    <my-button bindclick="update" bid="update" title="Update every 10th row"></my-button>
+    <my-button bindclick="swaprows" bid="swaprows" title="Swap Rows"></my-button>
+    <my-button bindclick="clear" bid="clear" title="Clear"></my-button>
+</view>
