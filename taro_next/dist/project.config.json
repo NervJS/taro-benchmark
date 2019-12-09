@@ -1,0 +1,16 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "taro-benchmark",
+  "description": "Taro benchmark",
+  "appid": "wxd964da35ecfc1f3e",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {}
+}

@@ -1,4 +1,4 @@
-import Taro, { Component } from '@tarojs/taro'
+import React, { Component } from 'react'
 import { View, Button, Image } from '@tarojs/components'
 import fetchData from '../../models'
 
@@ -6,7 +6,7 @@ import './index.scss'
 
 const startTime = Date.now()
 
-export default class Index extends Component {
+class Index extends Component {
   state = {
     data: [],
     selected: 0,
@@ -22,7 +22,7 @@ export default class Index extends Component {
       selected: 0
     }, () => {
       console.log(`init => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `init => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -37,7 +37,7 @@ export default class Index extends Component {
       selected: 0
     }, () => {
       console.log(`run => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `run => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -51,7 +51,7 @@ export default class Index extends Component {
       data: this.state.data.concat(fetchData().slice(0, 20))
     }, () => {
       console.log(`add => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `add => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -71,7 +71,7 @@ export default class Index extends Component {
     }
     this.forceUpdate(() => {
       console.log(`update => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `update => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -88,7 +88,7 @@ export default class Index extends Component {
     data[398] = temp
     this.forceUpdate(() => {
       console.log(`swapRows => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `swapRows => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -102,7 +102,7 @@ export default class Index extends Component {
       selected: idx
     }, () => {
       console.log(`select => 回调时间：${Date.now() - startTime}ms`)
-      Taro.showToast({
+      wx.showToast({
         icon: 'none',
         title: `select => 回调时间：${Date.now() - startTime}ms`,
         duration: 1500,
@@ -143,3 +143,5 @@ export default class Index extends Component {
     )
   }
 }
+
+export default Index

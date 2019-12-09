@@ -14,6 +14,7 @@ Page({
       data: fetchData(),
       selected: 0
     }, () => {
+      console.log(`init => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `init => 回调时间：${Date.now() - startTime}ms`,
@@ -28,6 +29,7 @@ Page({
       data: fetchData(),
       selected: 0
     }, () => {
+      console.log(`run => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `run => 回调时间：${Date.now() - startTime}ms`,
@@ -43,6 +45,7 @@ Page({
     }
     // const data = diffObjToPath({data: [...this.data.data, ...fetchData().slice(0, 20)]}, this.data)
     this.setData(data, () => {
+      console.log(`add => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `add => 回调时间：${Date.now() - startTime}ms`,
@@ -64,6 +67,7 @@ Page({
     this.setData({
       data
     }, () => {
+      console.log(`update => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `update => 回调时间：${Date.now() - startTime}ms`,
@@ -83,6 +87,7 @@ Page({
     this.setData({
       data
     }, () => {
+      console.log(`swapRows => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `swapRows => 回调时间：${Date.now() - startTime}ms`,
@@ -97,6 +102,7 @@ Page({
     this.setData({
       selected: id
     }, () => {
+      console.log(`select => 回调时间：${Date.now() - startTime}ms`)
       wx.showToast({
         icon: 'none',
         title: `select => 回调时间：${Date.now() - startTime}ms`,

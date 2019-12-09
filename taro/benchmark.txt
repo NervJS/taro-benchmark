@@ -1,0 +1,54 @@
+## Taro 1:
+
+init => 回调时间：689ms
+index.js:1182 run => 回调时间：556ms
+index.js:1194 add => 回调时间：363ms
+index.js:1211 update => 回调时间：303ms
+index.js:1211 update => 回调时间：282ms
+index.js:1194 add => 回调时间：896ms
+index.js:1194 add => 回调时间：515ms
+index.js:1194 add => 回调时间：1727ms
+index.js:1194 add => 回调时间：1709ms
+index.js:1211 update => 回调时间：211ms
+index.js:1239 select => 回调时间：1302ms
+index.js:1239 select => 回调时间：724ms
+index.js:1239 select => 回调时间：1290ms
+index.js:1239 select => 回调时间：1384ms
+index.js:1182 run => 回调时间：1268ms
+
+## Taro Next(nerv):
+
+init => 回调时间：186ms
+index.js:1260 run => 回调时间：139ms
+index.js:1275 add => 回调时间：1040ms
+index.js:1296 update => 回调时间：6ms
+index.js:1296 update => 回调时间：7ms
+index.js:1275 add => 回调时间：1242ms
+index.js:1275 add => 回调时间：222ms
+index.js:1275 add => 回调时间：143ms
+index.js:1275 add => 回调时间：984ms
+index.js:1275 add => 回调时间：935ms
+index.js:1296 update => 回调时间：5ms
+index.js:1329 select => 回调时间：1321ms
+index.js:1329 select => 回调时间：162ms
+index.js:1329 select => 回调时间：523ms
+index.js:1329 select => 回调时间：116ms
+index.js:1329 select => 回调时间：111ms
+index.js:1260 run => 回调时间：605ms
+
+## Wechat native:
+index.js? [sm]:17 init => 回调时间：142ms
+index.js? [sm]:32 run => 回调时间：261ms
+index.js? [sm]:48 add => 回调时间：367ms
+index.js? [sm]:70 update => 回调时间：448ms
+index.js? [sm]:70 update => 回调时间：259ms
+index.js? [sm]:48 add => 回调时间：346ms
+index.js? [sm]:48 add => 回调时间：387ms
+index.js? [sm]:48 add => 回调时间：453ms
+index.js? [sm]:48 add => 回调时间：441ms
+index.js? [sm]:70 update => 回调时间：479ms
+index.js? [sm]:105 select => 回调时间：258ms
+index.js? [sm]:105 select => 回调时间：221ms
+index.js? [sm]:105 select => 回调时间：239ms
+index.js? [sm]:105 select => 回调时间：208ms
+index.js? [sm]:32 run => 回调时间：251ms
