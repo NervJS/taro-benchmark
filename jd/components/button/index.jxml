@@ -1,3 +1,0 @@
-<view>
-    <button bid="{{bid}}" bindtap="handleTap">{{title}}</button>
-</view>

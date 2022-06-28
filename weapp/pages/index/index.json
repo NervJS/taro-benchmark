@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "jumbotron": "../../components/jumbotron/index"
-  },
-  "navigationBarTitleText": "wechat native"
-}
