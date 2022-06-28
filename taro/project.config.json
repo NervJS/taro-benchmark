@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "taro-benchmark",
 	"description": "Taro benchmark",
-	"appid": "wx331fe507139e5903",
+	"appid": "wxa9abf43f10a7bdb0",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
